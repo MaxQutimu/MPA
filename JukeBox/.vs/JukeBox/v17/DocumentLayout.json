@@ -1,0 +1,127 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Qutimu\\Desktop\\Projects\\JukeBox\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{74D8797E-5D0E-462D-8A93-D34FD0964086}|JukeBox.csproj|C:\\Users\\Qutimu\\Desktop\\Projects\\JukeBox\\playlist.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{74D8797E-5D0E-462D-8A93-D34FD0964086}|JukeBox.csproj|solutionrelative:playlist.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74D8797E-5D0E-462D-8A93-D34FD0964086}|JukeBox.csproj|C:\\Users\\Qutimu\\Desktop\\Projects\\JukeBox\\functions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{74D8797E-5D0E-462D-8A93-D34FD0964086}|JukeBox.csproj|solutionrelative:functions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74D8797E-5D0E-462D-8A93-D34FD0964086}|JukeBox.csproj|C:\\Users\\Qutimu\\Desktop\\Projects\\JukeBox\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{74D8797E-5D0E-462D-8A93-D34FD0964086}|JukeBox.csproj|solutionrelative:style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74D8797E-5D0E-462D-8A93-D34FD0964086}|JukeBox.csproj|c:\\users\\qutimu\\desktop\\projects\\jukebox\\playlist.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{74D8797E-5D0E-462D-8A93-D34FD0964086}|JukeBox.csproj|solutionrelative:playlist.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74D8797E-5D0E-462D-8A93-D34FD0964086}|JukeBox.csproj|C:\\Users\\Qutimu\\Desktop\\Projects\\JukeBox\\homepage.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{74D8797E-5D0E-462D-8A93-D34FD0964086}|JukeBox.csproj|solutionrelative:homepage.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74D8797E-5D0E-462D-8A93-D34FD0964086}|JukeBox.csproj|C:\\Users\\Qutimu\\Desktop\\Projects\\JukeBox\\homepage.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{74D8797E-5D0E-462D-8A93-D34FD0964086}|JukeBox.csproj|solutionrelative:homepage.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Homepage.aspx",
+              "DocumentMoniker": "C:\\Users\\Qutimu\\Desktop\\Projects\\JukeBox\\Homepage.aspx",
+              "RelativeDocumentMoniker": "Homepage.aspx",
+              "ToolTip": "C:\\Users\\Qutimu\\Desktop\\Projects\\JukeBox\\Homepage.aspx",
+              "RelativeToolTip": "Homepage.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-05-18T12:35:41.883Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Playlist.aspx",
+              "DocumentMoniker": "C:\\Users\\Qutimu\\Desktop\\Projects\\JukeBox\\Playlist.aspx",
+              "RelativeDocumentMoniker": "Playlist.aspx",
+              "ToolTip": "C:\\Users\\Qutimu\\Desktop\\Projects\\JukeBox\\Playlist.aspx",
+              "RelativeToolTip": "Playlist.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-05-21T11:24:00.693Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Functions.cs",
+              "DocumentMoniker": "C:\\Users\\Qutimu\\Desktop\\Projects\\JukeBox\\Functions.cs",
+              "RelativeDocumentMoniker": "Functions.cs",
+              "ToolTip": "C:\\Users\\Qutimu\\Desktop\\Projects\\JukeBox\\Functions.cs",
+              "RelativeToolTip": "Functions.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACEAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T19:12:00.744Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Style.css",
+              "DocumentMoniker": "C:\\Users\\Qutimu\\Desktop\\Projects\\JukeBox\\Style.css",
+              "RelativeDocumentMoniker": "Style.css",
+              "ToolTip": "C:\\Users\\Qutimu\\Desktop\\Projects\\JukeBox\\Style.css",
+              "RelativeToolTip": "Style.css",
+              "ViewState": "AQIAALsAAAAAAAAAAAAmwNUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-06-06T19:02:59.027Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Playlist.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\Qutimu\\Desktop\\Projects\\JukeBox\\Playlist.aspx.cs",
+              "RelativeDocumentMoniker": "Playlist.aspx.cs",
+              "ToolTip": "C:\\Users\\Qutimu\\Desktop\\Projects\\JukeBox\\Playlist.aspx.cs",
+              "RelativeToolTip": "Playlist.aspx.cs",
+              "ViewState": "AQIAANoAAAAAAAAAAAAAwO8AAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-28T18:15:51.669Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Homepage.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\Qutimu\\Desktop\\Projects\\JukeBox\\Homepage.aspx.cs",
+              "RelativeDocumentMoniker": "Homepage.aspx.cs",
+              "ToolTip": "C:\\Users\\Qutimu\\Desktop\\Projects\\JukeBox\\Homepage.aspx.cs",
+              "RelativeToolTip": "Homepage.aspx.cs",
+              "ViewState": "AQIAAMcAAAAAAAAAAAAkwOsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-18T13:24:17.283Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
