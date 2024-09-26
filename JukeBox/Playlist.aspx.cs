@@ -19,15 +19,11 @@ namespace JukeBox
                         int playlistId = Convert.ToInt32(Request.QueryString["playlistId"]);
                         hiddenPlaylistId.Value = playlistId.ToString();
                         LoadPlaylistSongs(playlistId);
-                        String inplaylist = "inplaylist";
-                        LoadPlaylists(inplaylist);
-
                     }
                     else
                     {
                         int User_ID = Convert.ToInt32(Request.QueryString["User_ID"]);
-                        String outplaylist = "outplaylist";
-                        LoadPlaylists(outplaylist);
+                        LoadPlaylists();
                     }
                 }
                 else
@@ -37,7 +33,7 @@ namespace JukeBox
             }
         }
 
-        private void LoadPlaylists(String inplaylist)
+        private void LoadPlaylists()
         {
             if (Session["User_ID"] != null)
             {
@@ -84,13 +80,8 @@ namespace JukeBox
 
                     playlistDiv.Controls.Add(imgElement);
                     playlistDiv.Controls.Add(detailsDiv);
-                    if (inplaylist == "outplaylist")
-                    {
-                        songsContainer.Controls.Add(playlistDiv);
-                    }
-                    else { 
-                        playlistsContainer.Controls.Add(playlistDiv);
-                    }
+
+                    songsContainer.Controls.Add(playlistDiv);
                 }
             }
         }
@@ -98,7 +89,7 @@ namespace JukeBox
         private DataTable GetPlaylistsForUser(string userId)
         {
             DataTable playlistsData = new DataTable();
-            using (SqlConnection conn = new SqlConnection("Server=DESKTOP-7QDMPI0\\SQLEXPRESS;Database=Jukebox;Trusted_Connection=True"))
+            using (SqlConnection conn = new SqlConnection("Server=LAPTOP-JGV34OHE;Database=Jukebox;Trusted_Connection=True"))
             {
                 SqlCommand cmd = new SqlCommand("SELECT * FROM Playlists WHERE User_ID = @User_ID", conn);
                 cmd.Parameters.AddWithValue("@User_ID", userId);
@@ -157,7 +148,7 @@ namespace JukeBox
         private DataTable GetSongsForPlaylist(int playlistId)
         {
             DataTable songsData = new DataTable();
-            using (SqlConnection conn = new SqlConnection("Server=DESKTOP-7QDMPI0\\SQLEXPRESS;Database=Jukebox;Trusted_Connection=True"))
+            using (SqlConnection conn = new SqlConnection("Server=LAPTOP-JGV34OHE;Database=Jukebox;Trusted_Connection=True"))
             {
                 SqlCommand cmd = new SqlCommand(@"
                     SELECT s.Song_ID, s.Title, s.Artist, s.Url, s.PhotoUrl
@@ -182,7 +173,7 @@ namespace JukeBox
 
             if (long.TryParse(hiddenSongId.Value, out songId) && long.TryParse(hiddenPlaylistId.Value, out playlistId))
             {
-                using (SqlConnection conn = new SqlConnection("Server=DESKTOP-7QDMPI0\\SQLEXPRESS;Database=Jukebox;Trusted_Connection=True"))
+                using (SqlConnection conn = new SqlConnection("Server=LAPTOP-JGV34OHE;Database=Jukebox;Trusted_Connection=True"))
                 {
                     conn.Open();
                     SqlCommand cmd = new SqlCommand("DELETE FROM Playlist_Songs WHERE Song_ID = @Song_ID AND Playlist_ID = @Playlist_ID", conn);
@@ -202,56 +193,6 @@ namespace JukeBox
                 // Handle the error: invalid songId or playlistId
                 System.Diagnostics.Debug.WriteLine("Error: Invalid songId or playlistId");
             }
-
-        }
-        private void UpdatePlaylistName(int playlistId, string newPlaylistName)
-        {
-            using (SqlConnection conn = new SqlConnection("Server=DESKTOP-7QDMPI0\\SQLEXPRESS;Database=Jukebox;Trusted_Connection=True"))
-            {
-                conn.Open();
-                SqlCommand cmd = new SqlCommand("UPDATE Playlists SET Name = @Name WHERE Playlist_ID = @Playlist_ID", conn);
-                cmd.Parameters.AddWithValue("@Name", newPlaylistName);
-                cmd.Parameters.AddWithValue("@Playlist_ID", playlistId);
-                cmd.ExecuteNonQuery();
-            }
-        }
-        protected void btnEditPlaylistName_Click(object sender, EventArgs e)
-        {
-            int playlistId;
-            if (int.TryParse(hiddenPlaylistId.Value, out playlistId))
-            {
-                string newPlaylistName = txtEditPlaylistName.Text.Trim();
-                if (!string.IsNullOrEmpty(newPlaylistName))
-                {
-                    UpdatePlaylistName(playlistId, newPlaylistName);
-                    Response.Redirect($"Playlist.aspx?playlistId={playlistId}");
-                }
-            }
-        } 
-        private void DeletePlaylistName(int playlistId){
-            using (SqlConnection conn = new SqlConnection("Server=DESKTOP-7QDMPI0\\SQLEXPRESS;Database=Jukebox;Trusted_Connection=True"))
-            {
-                conn.Open();
-                SqlCommand cmd = new SqlCommand("DELETE FROM Playlist_Songs WHERE Playlist_ID = @Playlist_ID", conn);
-                SqlCommand cmdd = new SqlCommand("DELETE FROM Playlists WHERE Playlist_ID = @Playlist_ID", conn);
-                cmd.Parameters.AddWithValue("@Playlist_ID", playlistId);
-                cmdd.Parameters.AddWithValue("@Playlist_ID", playlistId);
-                cmd.ExecuteNonQuery();
-                cmdd.ExecuteNonQuery();
-                Response.Redirect("Homepage.aspx");
-
-            }
-        }
-        protected void btnDeletePlaylist_Click(object sender, EventArgs e)
-        {
-            int playlistId;
-            if (int.TryParse(hiddenPlaylistId.Value, out playlistId))
-            {
-
-                DeletePlaylistName(playlistId);
-                Response.Redirect($"Playlist.aspx?playlistId={playlistId}");
-                }
-            }
         }
     }
-
+}

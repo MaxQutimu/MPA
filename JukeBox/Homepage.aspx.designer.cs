@@ -24,22 +24,22 @@ namespace JukeBox
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// playlistsContainer control.
+        /// PlaylistsRepeater control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl playlistsContainer;
+        protected global::System.Web.UI.WebControls.Repeater PlaylistsRepeater;
 
         /// <summary>
-        /// songsContainer control.
+        /// SongsRepeater control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl songsContainer;
+        protected global::System.Web.UI.WebControls.Repeater SongsRepeater;
 
         /// <summary>
         /// ddlPlaylists control.

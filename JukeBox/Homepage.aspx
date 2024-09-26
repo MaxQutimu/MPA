@@ -17,78 +17,83 @@
                     </li>
                     <li><a href="playlist.aspx">Playlists</a></li>
                 </ul>
-                <div id="playlistsContainer" class="playlists-container" runat="server">
-                    <!-- Playlists will be dynamically added here -->
+                <div id="playlistsContainer" class="playlists-container">
+                    <asp:Repeater ID="PlaylistsRepeater" runat="server">
+                        <ItemTemplate>
+                            <div class="playlist" onclick="location.href='Playlist.aspx?playlistId=<%# Eval("Playlist_ID") %>'">
+                                <img src="<%# Eval("Cover_Image_URL") %>" alt="<%# Eval("Name") %>" />
+                                <div class="playlist-details">
+                                    <p class="playlist-title"><%# Eval("Name") %></p>
+                                    <p class="playlist-date">Created: <%# Eval("Date_Created", "{0:dd-MM-yyyy}") %></p>
+
+                                </div>
+                            </div>
+                        </ItemTemplate>
+                    </asp:Repeater>
                 </div>
             </div>
             <div class="content">
-                <h3>Przygotowane dla Ciebie</h3>
-                <div id="songsContainer" class="songs-container" runat="server">
-                    <!-- Songs will be dynamically added here -->
+                <h3>Prepared for you</h3>
+                <div id="songsContainer" class="songs-container">
+                    <asp:Repeater ID="SongsRepeater" runat="server">
+                        <ItemTemplate>
+                            <div class="song">
+                                <img src="<%# Eval("PhotoUrl") %>" alt="<%# Eval("Title") %>" />
+                                <div class="song-details">
+                                    <p class="song-title">Title: <%# Eval("Title") %></p>
+                                    <p class="song-artist">Artist: <%# Eval("Artist") %></p>
+                                    <button type="button" onclick="addToPlaylist(<%# Eval("Song_ID") %>)">Add to playlist</button>
+                                </div>
+                            </div>
+                        </ItemTemplate>
+                    </asp:Repeater>
                 </div>
             </div>
         </div>
-        <!-- The Modal -->
+
+        <!-- Modal -->
         <div id="playlistModal" class="modal">
             <div class="modal-content">
-                <span class="close">&times;</span>
+                <span class="close" onclick="closeModal()">&times;</span>
                 <h3>Add to Playlist</h3>
                 <p>Select a playlist or create a new one:</p>
                 <asp:DropDownList ID="ddlPlaylists" runat="server"></asp:DropDownList>
                 <asp:TextBox ID="txtNewPlaylist" runat="server" Placeholder="New Playlist Name"></asp:TextBox>
                 <asp:Button ID="btnAddToPlaylist" runat="server" Text="Add" OnClick="btnAddToPlaylist_Click" />
+                <asp:HiddenField ID="hiddenSongId" runat="server" />
             </div>
         </div>
-        <asp:HiddenField ID="hiddenSongId" runat="server" />
+
+        <script> function addToPlaylist(songId) {
+                document.getElementById('hiddenSongId').value = songId;
+                document.getElementById('playlistModal').style.display = 'block';
+            }
+
+            function closeModal() {
+                document.getElementById('playlistModal').style.display = 'none';
+            }
+
+            function handleEnter(event) {
+                if (event.key === 'Enter') {
+                    searchSongs();
+                }
+            }
+
+            function debounceSearch() {
+                let timer;
+                clearTimeout(timer);
+                timer = setTimeout(searchSongs, 500);
+            }
+
+            function searchSongs() {
+                let searchTerm = document.getElementById("searchBar").value;
+                if (searchTerm) {
+                    window.location.href = `Homepage.aspx?search=${searchTerm}`;
+                } else {
+                    window.location.href = "Homepage.aspx";
+                }
+            }
+        </script>
     </form>
-    <script>
-        var modal = document.getElementById("playlistModal");
-        var span = document.getElementsByClassName("close")[0];
-
-        function openModal() {
-            modal.style.display = "block";
-        }
-
-        span.onclick = function () {
-            modal.style.display = "none";
-        }
-
-        window.onclick = function (event) {
-            if (event.target == modal) {
-                modal.style.display = "none";
-            }
-        }
-
-        function addToPlaylist(songId) {
-            event.preventDefault();
-            document.getElementById("<%= hiddenSongId.ClientID %>").value = songId;
-            openModal();
-        }
-
-        function debounce(func, delay) {
-            let debounceTimer;
-            return function () {
-                const context = this;
-                const args = arguments;
-                clearTimeout(debounceTimer);
-                debounceTimer = setTimeout(() => func.apply(context, args), delay);
-            };
-        }
-
-        function searchSongs() {
-            var query = document.getElementById('searchBar').value;
-            window.location.href = 'Homepage.aspx?search=' + query;
-        }
-
-        const debounceSearch = debounce(searchSongs, 5000);
-
-        function handleEnter(event) {
-            if (event.key === "Enter") {
-                event.preventDefault();
-                searchSongs();
-            }
-        }
-    </script>
 </body>
 </html>
-

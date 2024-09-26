@@ -14,7 +14,7 @@ namespace JukeBox
     {
         public int? Login_In(string username, string password)
         {
-            using (SqlConnection conn = new SqlConnection("Server=DESKTOP-7QDMPI0\\SQLEXPRESS;Database=Jukebox;Trusted_Connection=True"))
+            using (SqlConnection conn = new SqlConnection("Server=LAPTOP-JGV34OHE;Database=Jukebox;Trusted_Connection=True"))
             {
                 SqlCommand cmd = new SqlCommand("SELECT User_ID FROM Users WHERE username=@username AND password=@password", conn);
                 cmd.Parameters.AddWithValue("@username", username);
@@ -54,7 +54,7 @@ namespace JukeBox
     {
         public bool UserExistenceCheck(string username, string email)
         {
-            using (SqlConnection conn = new SqlConnection("Server=DESKTOP-7QDMPI0\\SQLEXPRESS;Database=Jukebox;Trusted_Connection=True"))
+            using (SqlConnection conn = new SqlConnection("Server=LAPTOP-JGV34OHE;Database=Jukebox;Trusted_Connection=True"))
             {
                 SqlCommand cmd = new SqlCommand("SELECT * FROM Users WHERE username=@username or email=@email", conn);
                 cmd.Parameters.AddWithValue("@username", username);
@@ -74,7 +74,7 @@ namespace JukeBox
         }
         public void RegisterUser(string username, string password, string email)
         {
-            using (SqlConnection conn = new SqlConnection("Server=DESKTOP-7QDMPI0\\SQLEXPRESS;Database=Jukebox;Trusted_Connection=True"))
+            using (SqlConnection conn = new SqlConnection("Server=LAPTOP-JGV34OHE;Database=Jukebox;Trusted_Connection=True"))
             {
                 SqlCommand cmd = new SqlCommand("INSERT INTO Users (username,password,email) VALUES (@username,@password,@email)", conn);
                 cmd.Parameters.AddWithValue("@username", username);

@@ -193,6 +193,7 @@ button:hover {
     border-radius: 5px;
     font-family: Arial, sans-serif;
     border: none;
+    color: white;
 }
 #ddlPlaylists {
     background: #1e1e1e;
@@ -224,48 +225,14 @@ button:hover {
 #btnAddToPlaylist:hover {
     background-color: #62cc84;
 }
-#txtEditPlaylistName {
-    background: #1e1e1e;
-    color: #fff;
-    border: 1px solid #888;
-    border-radius: 5px;
-    padding: 5px;
-    margin-right: 10px;
-}
-
-#btnEditPlaylistName {
-    background-color: #1db954;
-    color: #fff;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-    #btnEditPlaylistName:hover {
-        background-color: #62cc84;
-}
-#btnDeletePlaylist {
-    background-color: red;
-    color: #fff;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-#btnDeletePlaylist:hover {
-    background-color: lightcoral;
-}
 #btnRemoveFromPlaylist {
-    background-color: red;
+    background-color: #f70c0c;
     color: #fff;
     border: none;
     padding: 10px 15px;
     border-radius: 5px;
     cursor: pointer;
 }
-
-#btnRemoveFromPlaylistt:hover {
-    background-color: lightcoral;
+#btnRemoveFromPlaylist:hover{
+    background-color: #ec4646;
 }
