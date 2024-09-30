@@ -3,28 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\qutim\\Desktop\\Projects\\JukeBox\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{74D8797E-5D0E-462D-8A93-D34FD0964086}|JukeBox.csproj|C:\\Users\\qutim\\Desktop\\Projects\\JukeBox\\homepage.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{74D8797E-5D0E-462D-8A93-D34FD0964086}|JukeBox.csproj|solutionrelative:homepage.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+      "AbsoluteMoniker": "D:0:0:{74D8797E-5D0E-462D-8A93-D34FD0964086}|JukeBox.csproj|c:\\users\\qutim\\desktop\\projects\\jukebox\\models\\data.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{74D8797E-5D0E-462D-8A93-D34FD0964086}|JukeBox.csproj|solutionrelative:models\\data.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{74D8797E-5D0E-462D-8A93-D34FD0964086}|JukeBox.csproj|C:\\Users\\qutim\\Desktop\\Projects\\JukeBox\\homepage.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{74D8797E-5D0E-462D-8A93-D34FD0964086}|JukeBox.csproj|C:\\Users\\qutim\\Desktop\\Projects\\JukeBox\\models\\models.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{74D8797E-5D0E-462D-8A93-D34FD0964086}|JukeBox.csproj|solutionrelative:models\\models.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74D8797E-5D0E-462D-8A93-D34FD0964086}|JukeBox.csproj|c:\\users\\qutim\\desktop\\projects\\jukebox\\homepage.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{74D8797E-5D0E-462D-8A93-D34FD0964086}|JukeBox.csproj|solutionrelative:homepage.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{74D8797E-5D0E-462D-8A93-D34FD0964086}|JukeBox.csproj|c:\\users\\qutim\\desktop\\projects\\jukebox\\controllers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{74D8797E-5D0E-462D-8A93-D34FD0964086}|JukeBox.csproj|solutionrelative:controllers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{74D8797E-5D0E-462D-8A93-D34FD0964086}|JukeBox.csproj|c:\\users\\qutim\\desktop\\projects\\jukebox\\addtoplaylisthandler.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{74D8797E-5D0E-462D-8A93-D34FD0964086}|JukeBox.csproj|solutionrelative:addtoplaylisthandler.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{74D8797E-5D0E-462D-8A93-D34FD0964086}|JukeBox.csproj|c:\\users\\qutim\\desktop\\projects\\jukebox\\models\\models.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{74D8797E-5D0E-462D-8A93-D34FD0964086}|JukeBox.csproj|solutionrelative:models\\models.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{74D8797E-5D0E-462D-8A93-D34FD0964086}|JukeBox.csproj|c:\\users\\qutim\\desktop\\projects\\jukebox\\models\\data.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{74D8797E-5D0E-462D-8A93-D34FD0964086}|JukeBox.csproj|solutionrelative:models\\data.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{74D8797E-5D0E-462D-8A93-D34FD0964086}|JukeBox.csproj|C:\\Users\\qutim\\Desktop\\Projects\\JukeBox\\playlist.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
@@ -38,11 +30,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 4,
               "Title": "Playlist.aspx",
               "DocumentMoniker": "C:\\Users\\qutim\\Desktop\\Projects\\JukeBox\\Playlist.aspx",
               "RelativeDocumentMoniker": "Playlist.aspx",
@@ -61,77 +53,51 @@
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "AddToPlaylistHandler.aspx.cs",
-              "DocumentMoniker": "C:\\Users\\qutim\\Desktop\\Projects\\JukeBox\\AddToPlaylistHandler.aspx.cs",
-              "RelativeDocumentMoniker": "AddToPlaylistHandler.aspx.cs",
-              "ToolTip": "C:\\Users\\qutim\\Desktop\\Projects\\JukeBox\\AddToPlaylistHandler.aspx.cs",
-              "RelativeToolTip": "AddToPlaylistHandler.aspx.cs",
-              "ViewState": "AQIAAC4AAAAAAAAAAAAQwBcAAAAAAAAA",
+              "Title": "Controllers.cs",
+              "DocumentMoniker": "C:\\Users\\qutim\\Desktop\\Projects\\JukeBox\\Controllers.cs",
+              "RelativeDocumentMoniker": "Controllers.cs",
+              "ToolTip": "C:\\Users\\qutim\\Desktop\\Projects\\JukeBox\\Controllers.cs",
+              "RelativeToolTip": "Controllers.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAYwDMAAABcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-26T10:44:48.421Z",
+              "WhenOpened": "2024-09-30T08:55:53.417Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
+              "Title": "Data.cs",
+              "DocumentMoniker": "C:\\Users\\qutim\\Desktop\\Projects\\JukeBox\\Models\\Data.cs",
+              "RelativeDocumentMoniker": "Models\\Data.cs",
+              "ToolTip": "C:\\Users\\qutim\\Desktop\\Projects\\JukeBox\\Models\\Data.cs",
+              "RelativeToolTip": "Models\\Data.cs",
+              "ViewState": "AQIAADoAAAAAAAAAAAAnwFMAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-30T08:55:28.02Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Models.cs",
               "DocumentMoniker": "C:\\Users\\qutim\\Desktop\\Projects\\JukeBox\\Models\\Models.cs",
               "RelativeDocumentMoniker": "Models\\Models.cs",
               "ToolTip": "C:\\Users\\qutim\\Desktop\\Projects\\JukeBox\\Models\\Models.cs",
               "RelativeToolTip": "Models\\Models.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAUAAAAVAAAA",
+              "ViewState": "AQIAABkAAAAAAAAAAAAgwBoAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-26T08:10:32.136Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Homepage.aspx",
-              "DocumentMoniker": "C:\\Users\\qutim\\Desktop\\Projects\\JukeBox\\Homepage.aspx",
-              "RelativeDocumentMoniker": "Homepage.aspx",
-              "ToolTip": "C:\\Users\\qutim\\Desktop\\Projects\\JukeBox\\Homepage.aspx",
-              "RelativeToolTip": "Homepage.aspx",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-09-19T07:46:49.936Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Controllers.cs",
-              "DocumentMoniker": "C:\\Users\\qutim\\Desktop\\Projects\\JukeBox\\Controllers.cs",
-              "RelativeDocumentMoniker": "Controllers.cs",
-              "ToolTip": "C:\\Users\\qutim\\Desktop\\Projects\\JukeBox\\Controllers.cs",
-              "RelativeToolTip": "Controllers.cs",
-              "ViewState": "AQIAAEsAAAAAAAAAAAAYwAMAAAATAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-26T10:31:58.74Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Data.cs",
-              "DocumentMoniker": "C:\\Users\\qutim\\Desktop\\Projects\\JukeBox\\Models\\Data.cs",
-              "RelativeDocumentMoniker": "Models\\Data.cs",
-              "ToolTip": "C:\\Users\\qutim\\Desktop\\Projects\\JukeBox\\Models\\Data.cs",
-              "RelativeToolTip": "Models\\Data.cs",
-              "ViewState": "AQIAADMAAAAAAAAAAAAYwD4AAAA5AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-19T07:29:36.86Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "Homepage.aspx.cs",
               "DocumentMoniker": "C:\\Users\\qutim\\Desktop\\Projects\\JukeBox\\Homepage.aspx.cs",
               "RelativeDocumentMoniker": "Homepage.aspx.cs",
               "ToolTip": "C:\\Users\\qutim\\Desktop\\Projects\\JukeBox\\Homepage.aspx.cs",
               "RelativeToolTip": "Homepage.aspx.cs",
-              "ViewState": "AQIAAFoAAAAAAAAAAAAnwF0AAABDAAAA",
+              "ViewState": "AQIAABkAAAAAAAAAAAAQwBoAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-18T13:24:17.283Z",
               "EditorCaption": ""

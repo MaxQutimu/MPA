@@ -68,5 +68,54 @@ namespace JukeBox.Data
             }
             return playlists;
         }
+        public int AddSongToPlaylist(int songId, int playlistId, string newPlaylistName, string userId)
+        {
+            using (SqlConnection conn = new SqlConnection(_connectionString))
+            {
+                conn.Open();
+                SqlCommand cmd;
+
+                // Create new playlist if needed
+                if (!string.IsNullOrEmpty(newPlaylistName))
+                {
+                    Playlist playlist = new Playlist();
+                    Playlist newPlaylist = playlist.CreatePlaylist(userId, newPlaylistName);
+
+                    if (newPlaylist != null)
+                    {
+                        
+                    }
+                    else
+                    {
+                       
+                    }
+
+                }
+
+                // Check if the song already exists in the playlist
+                if (IsSongInPlaylist(playlistId, songId, conn))
+                {
+                    return 0; // Song already exists in playlist
+                }
+
+                // Add the song to the playlist
+                cmd = new SqlCommand("INSERT INTO Playlist_Songs (Playlist_ID, Song_ID) VALUES (@Playlist_ID, @Song_ID)", conn);
+                cmd.Parameters.AddWithValue("@Playlist_ID", playlistId);
+                cmd.Parameters.AddWithValue("@Song_ID", songId);
+                cmd.ExecuteNonQuery();
+
+                return playlistId; // Song successfully added
+            }
+        }
+
+        private bool IsSongInPlaylist(int playlistId, int songId, SqlConnection conn) //Check if song is already in playlist
+        {
+            SqlCommand cmd = new SqlCommand("SELECT COUNT(*) FROM Playlist_Songs WHERE Playlist_ID = @Playlist_ID AND Song_ID = @Song_ID", conn);
+            cmd.Parameters.AddWithValue("@Playlist_ID", playlistId);
+            cmd.Parameters.AddWithValue("@Song_ID", songId);
+            int count = (int)cmd.ExecuteScalar();
+            return count > 0;
+        }
+
     }
 }

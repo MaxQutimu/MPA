@@ -40,7 +40,6 @@ namespace JukeBox
 
             PlaylistsRepeater.DataSource = playlists;
             PlaylistsRepeater.DataBind();
-            System.Diagnostics.Debug.WriteLine("testing that itch ddl" + playlists);
 
 
             // Get the songs for the user based on the search query
